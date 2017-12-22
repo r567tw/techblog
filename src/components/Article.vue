@@ -2,7 +2,7 @@
 <div>
 <div class="modal is-full" :class="showArticle">
   <div @click="close" class="modal-background"></div>
-  <div class="modal-card">
+  <div class="modal-card" v-show="article">
     <header class="modal-card-head">
       <p class="modal-card-title" v-html="article.title.rendered"></p>
       <button class="delete" aria-label="close" @click="close"></button>

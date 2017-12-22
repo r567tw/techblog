@@ -23,10 +23,12 @@
     </div>
   </div>
 
-  <Article :showArticle="showArticle" @close="closeModal"/>
+  <div v-show="showArticle!=''">
+    <Article :showArticle="showArticle" @close="closeModal"/>
+  </div>
 
   <div class="text-center" v-show="postsLoading">
-        <Loading/>
+    <Loading/>
   </div>
   <div class="text-center" v-show="errorHandle">
         <p>Woops! 好像有一些問題，請直接進入入<a href="https://r567tw.tw">樂在信仰中主站</a>觀看相關技術文章</p>
@@ -40,8 +42,9 @@ import Article from './Article'
 import Loading from './Loading'
 
 export default {
-  mounted: function(){
+  created: function(){
     this.getPosts()
+
   },
   components:{
     Article,
