@@ -22,7 +22,10 @@
       </div>
     </div>
   </div>
-  <Article :showArticle="showArticle" @close="closeModal"/>
+
+  <div v-if="showArticle != ''">
+    <Article :showArticle="showArticle" @close="closeModal"/>
+  </div>
   <div class="text-center" v-show="postsLoading">
         <Loading/>
   </div>
@@ -38,7 +41,7 @@ import Article from './Article'
 import Loading from './Loading'
 
 export default {
-  created: function(){
+  mounted: function(){
     this.getPosts()
   },
   components:{
@@ -59,7 +62,6 @@ export default {
       var url ="https://r567tw.tw/wp-json/wp/v2/posts?categories=4"
       axios.get(url)
         .then(response => {
-          console.log(response.data)
           this.articles = response.data
           this.postsLoading = false
         })
