@@ -23,9 +23,8 @@
     </div>
   </div>
 
-  <div v-if="showArticle != ''">
-    <Article :showArticle="showArticle" @close="closeModal"/>
-  </div>
+  <Article :showArticle="showArticle" @close="closeModal"/>
+
   <div class="text-center" v-show="postsLoading">
         <Loading/>
   </div>
