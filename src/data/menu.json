@@ -3,13 +3,13 @@
     "title":"列表",
     "name": "home",
     "path":"/home",
-    "icon":"fa fa-home"
+    "icon":"fa fa-list"
   },
   {
     "title":"關於我",
     "name": "about",
     "path":"about",
-    "icon":"fa fa-home"
+    "icon":"fa fa-user-o"
   },
   {
     "title":"關於本站",

@@ -1,21 +1,10 @@
-# techblog
-
+# TechBlog 技術部落格
+[![Build Status](https://travis-ci.org/r567tw/techblog.svg?branch=master)](https://travis-ci.org/r567tw/techblog)
 > A Vue.js project
 
-## Build Setup
+> 練習使用以下技術
+- Wordpress REST API
+- Vue.js & Vue-Router
+- Bulma CSS framework
+- Travis CI
 
-``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
