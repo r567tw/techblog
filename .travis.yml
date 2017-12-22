@@ -6,7 +6,7 @@ install:
   - npm install
 script:
   - npm run build
-after_script:
+after_success:
   - cd ./dist
-
+  - curl -u $FTP_USER:$FTP_PASSWORD -T index.html ftp://r567tw.tw/public_html/tech/
 
